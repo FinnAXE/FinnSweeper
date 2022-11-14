@@ -24,7 +24,7 @@ def main():
     ip = ip[0:dot + 1]
     for i in range(155, 163):
         host = ip + str(i)
-        response = os.system("ping -c 1 -w 1 " + host + " > NUL")
+        response = os.system("ping -c 1 -w 1 " + host + " >/dev/null")
 
         if response == 0:
             print(host + " is up")
