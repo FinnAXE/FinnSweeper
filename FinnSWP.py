@@ -22,7 +22,7 @@ def main():
     print("[+] Starting Ping Sweeping on " + ip)
     dot = ip.rfind(".")
     ip = ip[0:dot + 1]
-    for i in range(155, 163):
+    for i in range(1, 256):
         host = ip + str(i)
         response = os.system("ping -c 1 -w 1 " + host + " >/dev/null")
 
